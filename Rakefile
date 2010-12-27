@@ -9,24 +9,6 @@ rescue Bundler::BundlerError => e
 end
 require 'rake'
 
-require 'jeweler'
-Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "panda"
-  gem.homepage = "http://github.com/zachbonham/panda"
-  gem.license = "MIT"
-  gem.summary = %Q{Packaging ANd Deployment Automation for .NET}
-  gem.description = %Q{Packaging ANd Deployment Automation for .NET using Ruby, if you dare!}
-  gem.email = "zachbonham@gmail.com"
-  gem.authors = ["Zach Bonham"]
-  gem.has_rdoc = false
-  gem.require_paths = %w[lib]
-  # Include your dependencies below. Runtime dependencies are required when using your gem,
-  # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
-  #  gem.add_development_dependency 'rspec', '> 1.2.3'
-end
-Jeweler::RubygemsDotOrgTasks.new
 
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
